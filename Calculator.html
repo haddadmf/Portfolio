@@ -1,0 +1,54 @@
+<head>
+<a href="#index.html">Back</a>
+
+<title> Mini Calculator....</title>
+</head>
+<body>
+<form id="form1">
+Enter Number 1: <input type="number" id="num1" size="20"><br>
+Enter Number 2: <input type="number" id="num2" size="20"><br>
+</form>
+<button onclick="add()">+</button>
+<button onclick="subtract()">-</button>
+<button onclick="multiply()">*</button>
+<button onclick="divide()">/</button>
+
+<script>
+
+function add()
+{
+	var number1=parseFloat(document.getElementById('num1').value);
+	var number2=parseFloat(document.getElementById('num2').value);
+	var total=number1+number2;
+	document.write("The sum is "+total);
+}
+
+
+function subtract()
+{
+	var number1=parseFloat(document.getElementById('num1').value);
+	var number2=parseFloat(document.getElementById('num2').value);
+	var diff=number1-number2;
+	document.write("The difference is "+diff);
+}
+
+
+function multiply()
+{
+	var number1=parseFloat(document.getElementById('num1').value);
+	var number2=parseFloat(document.getElementById('num2').value);
+	var mult=number1*number2;
+	document.write("The product is "+mult);
+}
+
+
+function divide()
+{
+	var number1=parseFloat(document.getElementById('num1').value);
+	var number2=parseFloat(document.getElementById('num2').value);
+	var quot=number1/number2;
+	document.write("The quotient is "+quot);
+}
+
+</script>
+</body>
