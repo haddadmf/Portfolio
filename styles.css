@@ -22,7 +22,7 @@ body {
 h1 {
     text-align: center;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 10px 0;
     color: #00539f;
     text-shadow: 3px 3px 1px rgb(144, 212, 209);
 }
@@ -32,6 +32,36 @@ img {
     margin: 0 auto;
 }
 
-li {
-    
+nav {
+    text-align: center;
+    padding: 15px;
+    background-color: #0b252ce8
+}
+
+
+aside {
+    width: 19%;
+    float: left;
+    padding: 5px;
+    background-color: #046b8ae8
+}
+
+section {
+    width: 39%;
+    float: left;
+    padding: 5px;
+    background-color: #80cbe2e8
+}
+
+article {
+    width: 39%;
+    float: left;
+    padding: 5px;
+    background-color: #489cb6e8
+}
+
+@media screen and (max-width:1000px){
+    aside, section, article{
+        width:100%
+    }
 }
