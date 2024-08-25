@@ -1,11 +1,37 @@
 <a href="index.html">Back</a>
-<link rel="stylesheet" href="styles.css">
+<!--<link rel="webpage-stylesheet" href="styles.css">-->
+<link rel="stylesheet" href="calculatorStyles.css">
+
 <head>
 
-<title> Mini Calculator....</title>
+	<title> Mini Calculator....</title>
+
 </head>
-<body>
-<form id="form1">
+
+	<div class="calculator">
+		<div class="calculator__output">0</div>
+		<div class="calculator__keys">
+		  <button class="calculator__key calculator__key--operator">+</button>
+		  <button class="calculator__key calculator__key--operator">-</button>
+		  <button class="calculator__key calculator__key--operator">&times;</button>
+		  <button class="calculator__key calculator__key--operator">÷</button>
+		  <button class="calculator__key">7</button>
+		  <button class="calculator__key">8</button>
+		  <button class="calculator__key">9</button>
+		  <button class="calculator__key">4</button>
+		  <button class="calculator__key">5</button>
+		  <button class="calculator__key">6</button>
+		  <button class="calculator__key">1</button>
+		  <button class="calculator__key">2</button>
+		  <button class="calculator__key">3</button>
+		  <button class="calculator__key">0</button>
+		  <button class="calculator__key">.</button>
+		  <button class="calculator__key">AC</button>
+		  <button class="calculator__key calculator__key--enter">=</button>
+		</div>
+	  </div>
+
+<!--<form id="form1">
 Enter Number 1: <input type="number" id="num1" size="20"><br>
 Enter Number 2: <input type="number" id="num2" size="20"><br>
 </form>
@@ -14,43 +40,4 @@ Enter Number 2: <input type="number" id="num2" size="20"><br>
 <button onclick="multiply()">*</button>
 <button onclick="divide()">/</button>
 
-<script>
-
-function add()
-{
-	var number1=parseFloat(document.getElementById('num1').value);
-	var number2=parseFloat(document.getElementById('num2').value);
-	var total=number1+number2;
-	document.write("The sum is "+total);
-}
-
-
-function subtract()
-{
-	var number1=parseFloat(document.getElementById('num1').value);
-	var number2=parseFloat(document.getElementById('num2').value);
-	var diff=number1-number2;
-	document.write("The difference is "+diff);
-}
-
-
-function multiply()
-{
-	var number1=parseFloat(document.getElementById('num1').value);
-	var number2=parseFloat(document.getElementById('num2').value);
-	var mult=number1*number2;
-	document.write("The product is "+mult);
-}
-
-
-function divide()
-{
-	var number1=parseFloat(document.getElementById('num1').value);
-	var number2=parseFloat(document.getElementById('num2').value);
-	var quot=number1/number2;
-	document.write("The quotient is "+quot);
-}
-
-</script>
-
-</body>
+<script src="calculator.js"></script>-->
