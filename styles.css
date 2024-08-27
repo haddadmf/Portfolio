@@ -65,3 +65,26 @@ article {
         width:100%
     }
 }
+
+.item
+{
+    float: left;
+    border: #AAA 1px solid;
+    padding: 10px;
+    margin: 60px;
+}
+
+.item > img
+{
+    width: 310px;
+    height: 241px;
+    border: #666 1px solid;
+    cursor: pointer;
+}
+
+.item > span
+{
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
