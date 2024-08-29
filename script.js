@@ -13,12 +13,13 @@ window.addEventListener("load", function()
     var thumbtimer, ti = 0, dir = "item_images/";   // ti keeps track of the image being displayed
 
     // these objects represent different photo collections
-    var obj1 = {name: "Lake_Photos", pics:["boatGlasses.jpg", "mattChair.jpg", "mattSurf.jpg", "twoDucks.jpg"]}
-    var obj2 = {name: "Lake_Photos", pics:["boatGlasses.jpg", "mattChair.jpg", "mattSurf.jpg", "twoDucks.jpg"]}
-    var obj3 = {name: "Lake_Photos", pics:["boatGlasses.jpg", "mattChair.jpg", "mattSurf.jpg", "twoDucks.jpg"]}
+    var obj1 = {name: "Lake Photos", pics:["boatGlasses.jpg", "mattChair.jpg", "mattSurf.jpg", "twoDucks.jpg"]}
+    var obj2 = {name: "Food Photos", pics:["squarePizza.jpg", "tacosLos.jpg", "chickenSandwich.jpg", "beefRibs.jpg"]}
+    var obj3 = {name: "Car Photos", pics:["lambo.jpg", "ferrari.jpg", "corvette.jpg", "supra.jpg"]}
+    var obj4 = {name: "View Photos", pics:["snowboarding.jpg", "beachSunset.jpg", "lakeInSequoia.jpg", "lebanon.jpg"]}
    
     // this array holds all the different photo collections
-    var ary = [obj1, obj2, obj3];
+    var ary = [obj1, obj2, obj3, obj4];
 
     // loops through the "ary" array to create and insert html elements
     for (var i = 0; i < ary.length; i++)

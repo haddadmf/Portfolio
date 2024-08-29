@@ -41,6 +41,7 @@ nav {
 
 aside {
     width: 19%;
+    height: 100%;
     float: left;
     padding: 5px;
     background-color: #046b8ae8
@@ -48,6 +49,7 @@ aside {
 
 section {
     width: 39%;
+    height: 100%;
     float: left;
     padding: 5px;
     background-color: #80cbe2e8
@@ -55,6 +57,7 @@ section {
 
 article {
     width: 39%;
+    height: 100%;
     float: left;
     padding: 5px;
     background-color: #489cb6e8
@@ -71,13 +74,13 @@ article {
     float: left;
     border: #AAA 1px solid;
     padding: 10px;
-    margin: 60px;
+    margin: 20px;
 }
 
 .item > img
 {
-    width: 310px;
-    height: 241px;
+    width: 400px;
+    height: 300px;
     border: #666 1px solid;
     cursor: pointer;
 }
