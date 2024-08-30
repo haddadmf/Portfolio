@@ -16,6 +16,7 @@ window.addEventListener("load", function()
         var span = document.createElement("span");
         div.className = "item";
         img.oi = i;
+        
         //
         img.src = dir + ary[i].pics[0];
 
