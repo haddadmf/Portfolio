@@ -6,17 +6,26 @@
 
 
 <nav>
+    <!--creates anchor tags in the nav bar-->
     <a href="#about"><button>About me</button></a>
     <a href="#academics"><button>Academic Information</button></a>
     <a href="#projects"><button>Personal Projects</button></a>
     <a href="Resume - Matthew Haddad (8_12_24).pdf"><button>My Resume</button></a>
+    
+    <!--creates a basic checkbox with the label "darkToggle"-->
+    <label for="darkToggle">Toggle Dark Theme!</label>
+    <input type = "checkbox" id = "darkToggle" name = "darkToggle" class = "darkToggle">
+    <label for = "darkToggle"></label>
+
+    
+    
 </nav>
 
 <div id="items_container"></div>
-<!--<img src="SUNP0056.jpg" width="652.8" height="489.6" alt="Me in Sequoia National park in 2024">-->
-
 
 <body>
+
+    <div class = "cursor"></div>
 
     <section>
         <h3 id="about">About me:</h3>
@@ -44,6 +53,7 @@
 
         <h3 id="projects">Personal Projects:</h3>
 
+        <!-- links to other pages-->
         <li><a href="Calculator.html"><button>Basic Calculator Project</button></a></li>
         <li><a href="CalcGPA.html"><button>Calculate your GPA Project</button></a></li>
         <li><a href="AnimalProject.html"><button>Animal Project</button></a></li>

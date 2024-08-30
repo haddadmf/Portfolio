@@ -87,3 +87,38 @@ window.addEventListener("load", function()
             });
     }
 })
+
+// triggers the toggle to switch the class on the body element
+let darkToggle = document.querySelector('#darkToggle');
+
+darkToggle.addEventListener('change', ()=>
+    {
+        document.body.classList.toggle('dark');
+    });
+
+
+
+const cursor = document.querySelector(".cursor");
+var timeout;
+    
+// follows the cursor when the mouse moves
+document.addEventListener("mousemove", (e) => {
+    let x = e.pageX;
+    let y = e.pageY;
+    
+    cursor.style.top = y + "px";
+    cursor.style.left = x + "px";
+    cursor.style.display = "block";
+    
+    //cursor effects when the mouse is stopped
+    function mouseStopped() {
+        cursor.style.display = "none";
+    }
+    clearTimeout(timeout);
+    timeout = setTimeout(mouseStopped, 5000);
+});
+    
+// cursor effects when mouse 'out'
+document.addEventListener("mouseout", () => {
+    cursor.style.display = "none";
+});
