@@ -15,9 +15,9 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 16px
 }
 
-body {
+/*body {
     background-color: #b0d0d8e8
-}
+}*/
 
 h1 {
     text-align: center;
@@ -36,11 +36,13 @@ nav {
     text-align: center;
     padding: 15px;
     background-color: #0b252ce8
+    
 }
 
 
 aside {
     width: 19%;
+    height: 100%;
     float: left;
     padding: 5px;
     background-color: #046b8ae8
@@ -48,6 +50,7 @@ aside {
 
 section {
     width: 39%;
+    height: 100%;
     float: left;
     padding: 5px;
     background-color: #80cbe2e8
@@ -55,6 +58,7 @@ section {
 
 article {
     width: 39%;
+    height: 100%;
     float: left;
     padding: 5px;
     background-color: #489cb6e8
@@ -71,13 +75,13 @@ article {
     float: left;
     border: #AAA 1px solid;
     padding: 10px;
-    margin: 60px;
+    margin: 20px;
 }
 
 .item > img
 {
-    width: 310px;
-    height: 241px;
+    width: 400px;
+    height: 300px;
     border: #666 1px solid;
     cursor: pointer;
 }
@@ -88,3 +92,76 @@ article {
     text-align: center;
     margin-top: 10px;
 }
+
+.darkToggle
+{
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 5px;
+    border: 2px solid #555;
+}
+
+.darkToggle:checked
+{
+    background: #333;
+}
+
+.dark
+{
+    color: white;
+    background: #444;
+}
+
+label[for="darkToggle"]{
+    font: bold 11px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 3px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 3px solid #333333;
+  border-left: 1px solid #CCCCCC;
+ }
+ #darkToggle{
+     display:none;
+ }
+
+ .cursor {
+    z-index: 999;
+    position: fixed;
+    background: #2696E8;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 20px #2696E8,
+        0 0 60px #2696E8,
+        0 0 100px #2696E8;
+    animation: colors 5s infinite;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+
+  @keyframes colors {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+  
+    100% {
+        filter: hue-rotate(360deg);
+    }
+  }
+  
+  .cursor:before {
+    content: '';
+    position: absolute;
+    background: #2696E8;
+    width: 50px;
+    height: 50px;
+    opacity: 0.2;
+    transform: translate(-30%, -30%);
+    border-radius: 50%;
+  }
